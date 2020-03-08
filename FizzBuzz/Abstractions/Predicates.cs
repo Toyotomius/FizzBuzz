@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace FizzBuzz
 {
-    public abstract class Predicates<T,U>
+    public abstract class Predicates<T, U>
     {
-       public abstract List<Func<T, U>> GetPredicates();
+        public abstract List<Func<T, U>> GetPredicates();
     }
 }

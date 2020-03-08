@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace FizzBuzz
 {
-    public class FizzBuzzPredicates : Predicates<int,string>
+    public class FizzBuzzPredicates : Predicates<int, string>
     {
         public override List<Func<int, string>> GetPredicates()
         {

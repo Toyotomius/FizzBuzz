@@ -1,12 +1,11 @@
-﻿using System;
-
-namespace FizzBuzz
+﻿namespace FizzBuzz
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            var fizzBuzz = new FizzBuzz();
+            IWriter consoleWriter = new ConsoleWriter();
+            var fizzBuzz = new FizzBuzz(consoleWriter);
             var predicates = new FizzBuzzPredicates();
 
             fizzBuzz.Execute(1, 100, predicates);
